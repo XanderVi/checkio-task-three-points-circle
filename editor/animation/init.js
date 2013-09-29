@@ -77,20 +77,62 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
             }
             //Dont change the code before it
 
-            //Your code here about test explanation animation
-            //$content.find(".explanation").html("Something text for example");
-            //
-            //
-            //
-            //
-            //
+            var canvas = new ThreePointsCircle();
+            canvas.createCanvas($content.find(".explanation")[0]);
+            canvas.createPlane();
+            canvas.createPoints(checkioInput);
+            canvas.createCircle(rightResult);
 
 
             this_e.setAnimationHeight($content.height() + 60);
 
         });
 
-       
+        var $tryit;
+        var tcanvas;
+        var tooltip = false;
+//
+        ext.set_console_process_ret(function (this_e, ret) {
+
+            tcanvas.removeCircle();
+            if (typeof(ret) === "string") {
+                ret = ret.replace(/\'/g, "");
+                var reg = /^\(x-\d+(?:\.\d+)?\)\^2\+\(y-\d+(?:\.\d+)?\)\^2=\d+(?:\.\d+)?\^2$/.exec(ret);
+                if (reg) {
+                    $tryit.find(".checkio-result-in").html("Return:<br>" +ret);
+                    setTimeout(tcanvas.createCircle(ret), 200);
+                }
+                else {
+                    $tryit.find(".checkio-result-in").html("Cant parse:<br>" +ret);
+                }
+            }
+            else {
+                $tryit.find(".checkio-result-in").html("Return not a string:<br>" +ret);
+            }
+        });
+
+        ext.set_generate_animation_panel(function (this_e) {
+
+            $tryit = $(this_e.setHtmlTryIt(ext.get_template('tryit')));
+
+            tcanvas = new ThreePointsCircle();
+            tcanvas.createCanvas($tryit.find(".tryit-canvas")[0]);
+            tcanvas.createPlane();
+            tcanvas.createFeedback(this_e);
+            $tryit.find(".tryit-canvas").mouseenter(function (e) {
+                if (tooltip) {
+                    return false;
+                }
+                var $tooltip = $tryit.find(".tryit-canvas .tooltip");
+                $tooltip.fadeIn(1000);
+                setTimeout(function () {
+                    $tooltip.fadeOut(1000);
+                }, 2000);
+                tooltip = true;
+                return false;
+            });
+
+        });
 
         var colorOrange4 = "#F0801A";
         var colorOrange3 = "#FA8F00";
