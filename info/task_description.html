@@ -1,39 +1,63 @@
 <p>
-    <i>( Describe task in general )</i>
+    Through any three points that do not exist on the same line, there lies a unique
+    circle.
+    The points of this circle are represented in a string with the coordinates like so:</p>
+<p><pre>
+    "(x1,y1),(x2,y2),(x3,y3)"
+</pre>    </p>
+<p>Where x1,y1,x2,y2,x3,y3 are integers.
 </p>
-
 <p>
-    Sum two passed ints
+    You should to find the circle for three given points, such
+    that the circle lies through these point and return the result as a string
+    with the equation of the circle. In a Cartesian coordinate system (with an X and Y axis), the circle with central coordinates of (a,b) and radius of r can be described with the following equation:
 </p>
+<pre>
+    "(x-x0)^2+(y-y0)^2=r^2"
 
+</pre>
+<p>
+    where <em>x0,y0,r</em> are decimal numbers with a precision of <strong>two digits</strong>.
+</p>
 <p style="text-align: center;">
-    <img class="for_info_only" title="example" src="{{MEDIA}}example.png" alt="example" width="392px"/>
-    <img class="for_editor_only" title="example" src="{{MEDIA}}example.png" alt="example" width="380px"/>
+    <img class="for_info_only"
+         title="three_points_circle"
+         src="{{ MEDIA }}three_points_circle.png"
+         alt="three_points_circle"
+         width="600px"/>
+    <img class="for_editor_only"
+         title="three_points_circle"
+         src="{{ MEDIA }}three_points_circle.png"
+         alt="three_points_circle"
+         width="380px"/>
 </p>
 
-<p><i>( Explain input and output values )</i></p>
 <p>
-    <strong>Input: </strong> Two arguments. Both are int
+    <strong>Conditions and remarks:</strong><br>
+    Given points does not lie at one line.<br>
+    Remove extraneous zeros and all decimals, they are not necessary.<br>
+    For rounding use the standard mathematical rule.
+
 </p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    <strong>Input: </strong> A string with coordinates.
 </p>
 
-
+<p>
+    <strong>Output: </strong> A string. An equation of the circle.
+</p>
 
 <div class="for_info_only">
-    <p><i>( Put some usage examples )</i></p>
+
     <p>
         <strong>Example:</strong>
     </p>
-    <pre class="brush: python">
-checkio(3, 2) == 5
-checkio(5, 7) == 12
-    </pre>
+<pre class="brush: python">checkio("(2,2),(4,2),(2,4)") == "(x-4)^2+(y-4)^2=2.83^2"
+checkio("(3,7),(6,9),(9,7)") == "(x-6)^2+(y-5.75)^2=3.25^2"</pre>
 </div>
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    <i>(Here you can explain how it can be used in development and what is usage of this.)</i>
+    Mathematical software.
 </p>
