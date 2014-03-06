@@ -1,23 +1,31 @@
 <p>
-    Through any three points that do not exist on the same line, there lies a unique
-    circle.
-    The points of this circle are represented in a string with the coordinates like so:</p>
-<p><pre>
+    Nicola discovered a calliper inside the gifted set of young draftsman. And now he is learning to use it.
+</p>
+<p>
+    Through any three points that do not exist on the same line, there lies a unique circle.
+    The points of this circle are represented in a string with the coordinates like so:
+</p>
+<pre>
     "(x1,y1),(x2,y2),(x3,y3)"
-</pre>    </p>
-<p>Where x1,y1,x2,y2,x3,y3 are integers.
+
+</pre>
+<p>Where <em>x1,y1,x2,y2,x3,y3</em> are digits.
 </p>
 <p>
     You should find the circle for three given points, such
     that the circle lies through these point and return the result as a string
-    with the equation of the circle. In a Cartesian coordinate system (with an X and Y axis), the circle with central coordinates of (a,b) and radius of r can be described with the following equation:
+    with the equation of the circle.
+    In a Cartesian coordinate system (with an X and Y axis),
+    the circle with central coordinates of (a,b) and radius of r can be described with the following equation:
 </p>
 <pre>
     "(x-x0)^2+(y-y0)^2=r^2"
 
 </pre>
 <p>
-    where <em>x0,y0,r</em> are decimal numbers with a precision of <strong>two digits</strong>.
+    where <em>x0,y0,r</em> are decimal numbers rounded to <strong>two decimal</strong>.
+    Remove extraneous zeros and all decimal points, they are not necessary.
+    For rounding, use the standard mathematical rule.
 </p>
 <p style="text-align: center;">
     <img class="for_info_only"
@@ -33,23 +41,11 @@
 </p>
 
 <p>
-    <strong>Conditions and remarks:</strong><br>
-    All three given points do not lie on one line.<br>
-    Remove extraneous zeros and all decimal points, they are not necessary.<br>
-    For rounding, use the standard mathematical rule.
-
-</p>
-
-
-<p>
-    <strong>Precondition: </strong> x, y, r < 10. Later we will add more complex tests as new levels.
-</p>
-<p>
     <strong>Input: </strong> A string with coordinates.
 </p>
 
 <p>
-    <strong>Output: </strong> A string. An equation of the circle.
+    <strong>Output: </strong> The equation of the circle as a string.
 </p>
 
 <div class="for_info_only">
@@ -63,5 +59,14 @@ checkio("(3,7),(6,9),(9,7)") == "(x-6)^2+(y-5.75)^2=3.25^2"</pre>
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    Mathematical software.
+    This equation, also known as Equation of the Circle,
+    follows from the Pythagorean theorem applied to any point on the circle:
+    the radius is the hypotenuse of a right-angled triangle whose other sides are of length x − a and y − b.
+    Of course you can use this concept for you mathematics software, but we just want to remind about this awesome fugure - Circle.
+</p>
+
+<p>
+    <strong>Precondition: </strong>
+    All three given points do not lie on one line.<br>
+    0 < x<sub>i</sub>, y<sub>i</sub>, r < 10
 </p>
