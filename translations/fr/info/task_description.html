@@ -1,0 +1,73 @@
+<p>
+  Nicola découvre un compas dans la trousse à dessin que lui a offert Sofia. 
+  Il décide d'apprendre à s'en servir.
+</p>
+<p>
+Par trois points qui ne sont pas alignés (c'est à dire qu'on ne peut pas trouver de droite 
+sur laquelle il se trouvent tous les trois), il passe un seul et unique cercle.
+Les trois points sont représentés par une chaîne de caractère qui contient leurs coordonnées, de la façon suivante :
+</p>
+<pre>
+    "(x1,y1),(x2,y2),(x3,y3)"
+</pre>
+<p>où <em>x1,y1,x2,y2,x3,y3</em> sont des nombres.
+</p>
+<p>
+Il vous faut déterminer le cercle qui passe par ces trois points, et retourner le résultat sous forme d'une
+chaîne de caractères qui présente l'équation du cercle.
+Dans une repère cartésien (d'axes X et Y), le cercle dont le centre a pour coordonnées  (x0,y0) 
+et le rayon est r peut être décrit par l'équation suivante :
+</p>
+<pre>
+    "(x-x0)^2+(y-y0)^2=r^2"
+
+</pre>
+<p>
+    où <em>x0</em>,<em>y0</em>,<em>r</em>  sont des nombres décimaux arroundis à <strong>deux décimales</strong>.
+    Pour arrondir, utiliser les règles mathématiques standard.
+    Enlever les zéros surnuméraires.
+</p>
+<p style="text-align: center;">
+    <img class="for_info_only"
+         title="three_points_circle"
+         src="{{ MEDIA }}three_points_circle.png"
+         alt="three_points_circle"
+         width="600px"/>
+    <img class="for_editor_only"
+         title="three_points_circle"
+         src="{{ MEDIA }}three_points_circle.png"
+         alt="three_points_circle"
+         width="380px"/>
+</p>
+
+<p>
+    <strong>Input: </strong> Les couples de coordonnées (chaîne de caractères - str).
+</p>
+
+<p>
+    <strong>Output: </strong> L'équation du cercle (str).
+</p>
+
+<div class="for_info_only">
+
+    <p>
+        <strong>Exemple:</strong>
+    </p>
+<pre class="brush: python">checkio("(2,2),(6,2),(2,6)") == "(x-4)^2+(y-4)^2=2.83^2"
+checkio("(3,7),(6,9),(9,7)") == "(x-6)^2+(y-5.75)^2=3.25^2"</pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Utilisation: </strong>
+    Cette équation, connue sous le nom d'"équation du cercle",
+    exprime que le carré de la distance euclidienne du centre de coordonnées (x0, y0) au point courant du cercle de coordonnées (x, y), 
+    qui est (x0 - x)**2 + (y0 - y)**2,
+    égale le carré du rayon du cercle r**2.
+    Le cercle est un très bel objet mathématique !
+</p>
+
+<p>
+    <strong>Préconditions: </strong>
+    Les trois points donnés ne sont pas alignés.<br>
+    0 &lt; x<sub>i</sub>, y<sub>i</sub>, r &lt; 10
+</p>
