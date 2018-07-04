@@ -53,8 +53,17 @@ et le rayon est r peut être décrit par l'équation suivante :
     <p>
         <strong>Exemple:</strong>
     </p>
-<pre class="brush: python">checkio("(2,2),(6,2),(2,6)") == "(x-4)^2+(y-4)^2=2.83^2"
-checkio("(3,7),(6,9),(9,7)") == "(x-6)^2+(y-5.75)^2=3.25^2"</pre>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">
+circle("(2,2),(6,2),(2,6)") == "(x-4)^2+(y-4)^2=2.83^2"
+circle("(3,7),(6,9),(9,7)") == "(x-6)^2+(y-5.75)^2=3.25^2"
+</pre>
+{% else %}
+<pre class="brush: python">
+circle("(2,2),(6,2),(2,6)") == "(x-4)^2+(y-4)^2=2.83^2"
+circle("(3,7),(6,9),(9,7)") == "(x-6)^2+(y-5.75)^2=3.25^2"
+</pre>
+{% endif %}
 </div>
 
 <p class="for_info_only">

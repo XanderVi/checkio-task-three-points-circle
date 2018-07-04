@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 285.75001 285.75001"
+   height="1080"
+   width="1080">
+  <defs
+     id="defs2">
+    <marker
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible">
+      <path
+         id="path5322"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#fa8f00;fill-opacity:1;fill-rule:evenodd;stroke:#fa8f00;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-4"
+       style="overflow:visible">
+      <path
+         id="path5322-5"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#fa8f00;fill-opacity:1;fill-rule:evenodd;stroke:#fa8f00;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     y="-0.0035707499"
+     x="0.0084436871"
+     height="285.75"
+     width="285.75"
+     id="rect7624"
+     style="fill:#c9ebfb;fill-opacity:1;stroke:none;stroke-width:18.2091732;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill" />
+  <circle
+     r="111.36668"
+     cy="145.66008"
+     cx="142.98552"
+     id="path4728"
+     style="fill:none;fill-opacity:1;stroke:#294270;stroke-width:8.94291687;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill" />
+  <circle
+     r="2.2996073"
+     cy="96.711311"
+     cx="43.445381"
+     id="path4730-3"
+     style="fill:#f98f00;fill-opacity:1;stroke:#f98f00;stroke-width:8.94291687;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill" />
+  <circle
+     r="2.2996073"
+     cy="98.02536"
+     cx="244.49677"
+     id="path4730-6"
+     style="fill:#f98f00;fill-opacity:1;stroke:#f98f00;stroke-width:8.94291687;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill" />
+  <circle
+     r="2.2996073"
+     cy="255.71274"
+     cx="145.94215"
+     id="path4730-7"
+     style="fill:#f98f00;fill-opacity:1;stroke:#f98f00;stroke-width:8.94291687;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill" />
+  <circle
+     r="2.2996073"
+     cy="146.85507"
+     cx="143.12726"
+     id="path4730-6-5"
+     style="fill:#f98f00;fill-opacity:1;stroke:#f98f00;stroke-width:8.94291687;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill" />
+  <path
+     id="path5621"
+     d="M 43.915636,96.263719 C 77.20536,112.90858 110.49492,129.55335 143.78431,146.19804"
+     style="fill:none;stroke:#f98f00;stroke-width:3.5771668;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="path5625"
+     d="M 244.30998,96.263719 C 210.80195,112.90823 177.2934,129.553 143.78431,146.19804"
+     style="fill:none;stroke:#f98f00;stroke-width:3.5771668;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="path5629"
+     d="m 145.75538,255.26512 c -0.65703,-36.35613 -1.31405,-72.71182 -1.97107,-109.06708"
+     style="fill:none;stroke:#f98f00;stroke-width:3.5771668;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+</svg>
